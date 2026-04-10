@@ -28,11 +28,57 @@ footer {
     border-top: 3px var(--Footer-Border) double;
     background: var(--Primary-Light-bg) !important;
 }
+footer a {
+    color: #5a4a36;
+}
+footer a:hover {
+    color: #26ba67;
+}
 
 /*Top*/
 .breadcrumbs {
     padding: 1em;
     background: var(--Primary-Light-bg);
+}
+.breadcrumbs a {
+    color: #22739b !important;
+}
+.breadcrumbs a:hover {
+    color: #26ba67 !important;
+}
+
+/* Navigation Bar */
+nav {
+    background: #f0ebe5;
+}
+nav a {
+    color: #5a4a36 !important;
+}
+nav a:hover {
+    color: #22739b !important;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #2e1e0e;
+}
+
+/* Content Links */
+.readable a {
+    color: #22739b;
+}
+.readable a:hover {
+    color: #26ba67;
+}
+.readable a:visited {
+    color: #5a3e7a;
+}
+
+/* Script Selector Dropdowns */
+select {
+    background: #f0ebe5;
+    color: #4a341c;
+    border: 1px solid #ccc1b3;
 }
 
 /*Example Blocks*/

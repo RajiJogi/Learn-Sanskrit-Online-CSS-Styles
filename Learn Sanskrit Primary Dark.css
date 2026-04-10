@@ -28,12 +28,58 @@ footer {
   border-top: 3px var(--Footer-Border) double;
   background: var(--Top-Bottom-bg) !important;
 }
+footer a {
+    color: #c4a882;
+}
+footer a:hover {
+    color: #26ba67;
+}
 
 /*Top*/
 .breadcrumbs {
   padding: 1em;
   background: var(--Top-Bottom-bg);
   border-bottom: var(--Footer-Border) double;
+}
+.breadcrumbs a {
+    color: #35a3da !important;
+}
+.breadcrumbs a:hover {
+    color: #26ba67 !important;
+}
+
+/* Navigation Bar */
+nav {
+    background: #3a3127;
+}
+nav a {
+    color: #c4a882 !important;
+}
+nav a:hover {
+    color: #35a3da !important;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #f0dcc5;
+}
+
+/* Content Links */
+.readable a {
+    color: #35a3da;
+}
+.readable a:hover {
+    color: #26ba67;
+}
+.readable a:visited {
+    color: #a87ed4;
+}
+
+/* Script Selector Dropdowns */
+select {
+    background: #3a3127;
+    color: #EBDAC7;
+    border: 1px solid #5a4d3e;
 }
 
 /*Example Blocks*/
@@ -110,15 +156,23 @@ em {
     color: #22739b;
 }
 
-/* Tables */
-.default td {
-    background: #362940;
+/* Tables — catch all content tables */
+.readable table td,
+.readable table th {
+    background: #362940 !important;
     border-bottom: 1px #4e3b5d double;
+    color: #EBDAC7;
 }
-
+.readable table th,
 .default th, .sandhi th {
-    background: #31213d;
+    background: #31213d !important;
     color: #b05fed;
     border-bottom: 1px #8135b9 double;
+}
+
+/* Tables — specific overrides */
+.default td {
+    background: #362940 !important;
+    border-bottom: 1px #4e3b5d double;
 }
 }
