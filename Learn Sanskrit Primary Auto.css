@@ -225,18 +225,18 @@ em {
     .readable table td,
     .readable table th {
         background: #362940 !important;
-        border-bottom: 1px #4e3b5d double;
+        border-bottom: 1px #2e4566 double;
         color: #EBDAC7;
     }
     .readable table th,
     .default th, .sandhi th {
         background: #31213d !important;
         color: #b05fed;
-        border-bottom: 1px #8135b9 double;
+        border-bottom: 1px #2e4566 double;
     }
     .default td {
         background: #362940 !important;
-        border-bottom: 1px #4e3b5d double;
+        border-bottom: 1px #2e4566 double;
     }
 }
 
