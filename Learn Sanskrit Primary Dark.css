@@ -14,10 +14,6 @@ body{
         
     --Readability: 700px;
 }
-    
-element {
-    background-color: var(--Primary-Light-bg) !important
-}
 
 body > main:nth-child(2) > div:nth-child(1) {
     background-color: var(--Primary-Light-bg) !important;
@@ -38,9 +34,7 @@ footer {
   padding: 1em;
   background: var(--Top-Bottom-bg);
   border-bottom: var(--Footer-Border) double;
-
 }
-
 
 /*Example Blocks*/
 .examples {
@@ -49,40 +43,39 @@ footer {
 
 /*Body Text*/
 :root {
---body-color: #EBDAC7;
+    --body-color: #EBDAC7;
 }
 
-/*Width of Artical*/
+/*Width of Article*/
 .readable {
-max-width: var(--Readability);
+    max-width: var(--Readability);
 }
 
 /* New Highlight*/
 .bg-yellow {
-background: #998b02;
+    background: #998b02;
 }
+
 .part2 {
     background: var(--Chart-bg);
 }
 
 /*Stems Charts*/
 .paradigm {
-  background: var(--Chart-bg);
+    background: var(--Chart-bg);
 }
 .paradigm th {
-  color: #f5cfa5;
-
+    color: #f5cfa5;
 }
 
 /*Note Block*/
 .note {
     background: var(--Note-bg) !important;
-
 }
 
 /* Extra Block */
 .true-aside {
-background: #2e4566;
+    background: #2e4566;
 }
 
 /* Start Button*/
@@ -95,54 +88,37 @@ background: #2e4566;
     
 /* Prakriya Block */ 
 .prakriya {
-background: #322c23;
+    background: #322c23;
 }
 .prakriya .rule {
-color: #806f5c;
+    color: #806f5c;
 }
-
 
 /*Italics*/
 em {
-	color: var(--Italics) !important;
-    
+    color: var(--Italics) !important;
 }
 
 /*Links below the banner*/
-.pa2 {
-    a {
-        color: #35a3da;
-
-    }
-    a:hover {
-        color: #26ba67;
+.pa2 a {
+    color: #35a3da;
 }
-
-    a:visited {
-        color: #22739b;
-    }
-    
+.pa2 a:hover {
+    color: #26ba67;
+}
+.pa2 a:visited {
+    color: #22739b;
 }
 
 /* Tables */
 .default td {
-background: #362940;
-border-bottom: 1px #4e3b5d double;
-
-}
-
-table.default:nth-child(6) > tbody:nth-child(1) > tr:nth-child(57) > td:nth-child(2) {
-background: #3f3746 !important;
-}
-
-table.default:nth-child(6) > tbody:nth-child(1) > tr:nth-child(32) > td:nth-child(2) {
-background: #3f3746 !important;
+    background: #362940;
+    border-bottom: 1px #4e3b5d double;
 }
 
 .default th, .sandhi th {
     background: #31213d;
     color: #b05fed;
     border-bottom: 1px #8135b9 double;
-
 }
 }

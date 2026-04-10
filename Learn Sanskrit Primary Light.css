@@ -1,3 +1,4 @@
+@-moz-document domain("www.learnsanskrit.org") {
 /*Main Background*/
     
 body{
@@ -13,10 +14,6 @@ body{
         
     --Readability: 700px;
 }
-    
-element {
-    background-color: var(--Primary-Light-bg) !important
-}
 
 body > main:nth-child(2) > div:nth-child(1) {
     background-color: var(--Primary-Light-bg) !important;
@@ -28,14 +25,14 @@ main {
 
 /*Bottom*/
 footer {
-  border-top: 3px var(--Footer-Border) double;
-  background: var(--Primary-Light-bg) !important;
+    border-top: 3px var(--Footer-Border) double;
+    background: var(--Primary-Light-bg) !important;
 }
 
 /*Top*/
 .breadcrumbs {
-  padding: 1em;
-  background: var(--Primary-Light-bg);
+    padding: 1em;
+    background: var(--Primary-Light-bg);
 }
 
 /*Example Blocks*/
@@ -45,14 +42,13 @@ footer {
 
 /*Body Text*/
 :root {
---body-color: var(--Body-Text);
+    --body-color: var(--Body-Text);
 }
 
-/*Width of Artical*/
+/*Width of Article*/
 .readable {
-max-width: var(--Readability);
+    max-width: var(--Readability);
 }
-
 
 .part2 {
     background: var(--Chart-bg);
@@ -60,13 +56,12 @@ max-width: var(--Readability);
 
 /*Stems Charts*/
 .paradigm {
-  background: var(--Chart-bg);
+    background: var(--Chart-bg);
 }
 
 /*Note Block*/
 .note {
     background: var(--Note-bg) !important;
-
 }
 
 /* Start Button*/
@@ -77,27 +72,19 @@ max-width: var(--Readability);
     background: var(--Start-Button-hover) !important;
 }
 
-
 /*Italics*/
 em {
-	color: var(--Italics) !important;
-    
+    color: var(--Italics) !important;
 }
 
 /*Links below the banner*/
-.pa2 {
-    a {
-        color: #22739b;
-
-    }
-    a:hover {
-        color: #26ba67;
+.pa2 a {
+    color: #35a3da;
 }
-
-    a:visited {
-        color: #35a3da;
-    }
-    
+.pa2 a:hover {
+    color: #26ba67;
 }
-
-
+.pa2 a:visited {
+    color: #22739b;
+}
+}

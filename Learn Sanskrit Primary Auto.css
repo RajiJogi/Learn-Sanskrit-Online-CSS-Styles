@@ -1,0 +1,166 @@
+@-moz-document domain("www.learnsanskrit.org") {
+
+/* 
+   Light Theme Variables
+*/
+@media (prefers-color-scheme: light) {
+    body {
+        --Primary-Light-bg: #f9f5f2;
+        --Top-Bottom-bg: #f9f5f2;
+        --Footer-Border: #dcd4c9;
+        --Example-Block-bg: #f3e9e2;
+        --Chart-bg: #efeae2;
+        --Note-bg: linear-gradient(45deg, #edd3df, #f5cfe1);
+        --Italics: #100b06;
+        --body-color: #4a341c;
+        --link-color: #35a3da;
+        --link-hover: #26ba67;
+        --link-visited: #22739b;
+    }
+}
+
+/* 
+   Dark Theme Variables
+*/
+@media (prefers-color-scheme: dark) {
+    body {
+        --Primary-Light-bg: #2D271F;
+        --Top-Bottom-bg: #332b21;
+        --Footer-Border: #483e31;
+        --Example-Block-bg: #2A241D;
+        --Chart-bg: #352b1e;
+        --Note-bg: linear-gradient(45deg, #602138, #631f39);
+        --Italics: #d4b48f;
+        --body-color: #EBDAC7;
+        --link-color: #35a3da;
+        --link-hover: #26ba67;
+        --link-visited: #22739b;
+    }
+}
+
+/*
+   Shared Rules
+*/
+
+body {
+    --Start-Button: #95e773;
+    --Start-Button-hover: radial-gradient(#95e773, #6de593);
+    --Readability: 700px;
+}
+
+:root {
+    --body-color: var(--body-color);
+}
+
+body > main:nth-child(2) > div:nth-child(1) {
+    background-color: var(--Primary-Light-bg) !important;
+}
+
+main {
+    background: var(--Primary-Light-bg) !important;
+}
+
+/* Bottom */
+footer {
+    border-top: 3px var(--Footer-Border) double;
+    background: var(--Top-Bottom-bg) !important;
+}
+
+/* Top */
+.breadcrumbs {
+    padding: 1em;
+    background: var(--Top-Bottom-bg);
+}
+
+/* Example Blocks */
+.examples {
+    background: var(--Example-Block-bg) !important;
+}
+
+/* Width of Article */
+.readable {
+    max-width: var(--Readability);
+}
+
+.part2 {
+    background: var(--Chart-bg);
+}
+
+/* Stems Charts */
+.paradigm {
+    background: var(--Chart-bg);
+}
+
+/* Note Block */
+.note {
+    background: var(--Note-bg) !important;
+}
+
+/* Start Button */
+.call-to-action {
+    background: var(--Start-Button) !important;
+}
+.call-to-action:hover {
+    background: var(--Start-Button-hover) !important;
+}
+
+/* Italics */
+em {
+    color: var(--Italics) !important;
+}
+
+/* Links below the banner */
+.pa2 a {
+    color: var(--link-color);
+}
+.pa2 a:hover {
+    color: var(--link-hover);
+}
+.pa2 a:visited {
+    color: var(--link-visited);
+}
+
+/* 
+   Dark-Only Rules
+*/
+@media (prefers-color-scheme: dark) {
+
+    .breadcrumbs {
+        border-bottom: var(--Footer-Border) double;
+    }
+
+    /* Highlight */
+    .bg-yellow {
+        background: #998b02;
+    }
+
+    .paradigm th {
+        color: #f5cfa5;
+    }
+
+    /* Extra Block */
+    .true-aside {
+        background: #2e4566;
+    }
+
+    /* Prakriya Block */
+    .prakriya {
+        background: #322c23;
+    }
+    .prakriya .rule {
+        color: #806f5c;
+    }
+
+    /* Tables */
+    .default td {
+        background: #362940;
+        border-bottom: 1px #4e3b5d double;
+    }
+    .default th, .sandhi th {
+        background: #31213d;
+        color: #b05fed;
+        border-bottom: 1px #8135b9 double;
+    }
+}
+
+}
